@@ -7,6 +7,10 @@ redirect_from:
   - /about.html
 ---
 
+
+Research-oriented with a strong passion for mathematics and statistical analysis. My work focuses on nonstationary time series and extreme
+value theory. I am also committed to teaching and enjoy communicating complex concepts clearly.
+
 Reasearch interests 
 ======
 - Nonstationary time series
