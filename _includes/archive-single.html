@@ -44,8 +44,12 @@
     {{ post.type }}, <i>{{ post.venue }}</i>
   </span>
   <span class="teaching-right">
+  {% if post.years %}
+    {{ post.years }}
+  {% else %}
     {{ post.date | default: "1900-01-01" | date: "%Y" }}
-  </span>
+  {% endif %}
+</span>
 </div>
         {% elsif post.collection == 'publications' %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
