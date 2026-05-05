@@ -41,3 +41,18 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* ===== Custom teaching font sizes ===== */
+
+/* Only affect teaching page */
+.teaching-page .archive__item-title {
+  font-size: 1.2em;   /* course title */
+}
+
+.teaching-page .teaching-meta {
+  font-size: 0.9em;   /* course info line */
+}
+
+.teaching-page .archive__item-excerpt {
+  font-size: 0.95em;  /* description */
+}
