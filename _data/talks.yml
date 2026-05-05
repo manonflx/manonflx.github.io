@@ -1,0 +1,14 @@
+- title: "Title of Talk 1"
+  type: "Invited talk"
+  venue: "Conference / University / City"
+  years: "2024"
+
+- title: "Title of Talk 2"
+  type: "Seminar"
+  venue: "UNIGE"
+  years: "2023"
+
+- title: "Title of Talk 3"
+  type: "Conference presentation"
+  venue: "EPFL"
+  years: "2022"
