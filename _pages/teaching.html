@@ -3,12 +3,26 @@ layout: archive
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
-classes: teaching-page 
 ---
-
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+{% for course in site.data.teaching %}
+  <div class="archive__item">
+    
+    <h2 class="archive__item-title">
+      {{ course.title }}
+    </h2>
+
+    <div class="teaching-meta">
+      <span class="teaching-left">
+        {{ course.type }}, <i>{{ course.venue }}</i>
+      </span>
+
+      <span class="teaching-right">
+        {{ course.years }}
+      </span>
+    </div>
+
+  </div>
 {% endfor %}
