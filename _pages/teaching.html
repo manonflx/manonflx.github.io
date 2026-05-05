@@ -8,21 +8,21 @@ author_profile: true
 {% include base_path %}
 
 {% for course in site.data.teaching %}
-  <div class="archive__item">
-    
-    <h2 class="archive__item-title">
+
+  <div class="teaching-item">
+
+    <div class="teaching-title">
       {{ course.title }}
-    </h2>
+    </div>
+
+    <div class="teaching-program">
+      {{ course.type }}
+    </div>
 
     <div class="teaching-meta">
-      <span class="teaching-left">
-        {{ course.type }}, <i>{{ course.venue }}</i>
-      </span>
-
-      <span class="teaching-right">
-        {{ course.years }}
-      </span>
+      {{ course.venue }}, {{ course.years }}
     </div>
 
   </div>
+
 {% endfor %}

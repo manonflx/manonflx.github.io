@@ -42,52 +42,34 @@
     "vendor/font-awesome/brands"
 ;
 
-/* ===== Custom teaching font sizes ===== */
+/* ===== CV-style Teaching Section ===== */
 
-/* Only affect teaching page */
-.teaching-page .archive__item-title {
-  font-size: 1.2em;   /* course title */
+.teaching-page .teaching-item {
+  margin-bottom: 0.8em;
 }
 
-.teaching-page .teaching-meta {
-  font-size: 0.9em;   /* course info line */
-}
-
-.teaching-page .archive__item-excerpt {
-  font-size: 0.95em;  /* description */
-}
-
-/* ===== Teaching CV-style layout ===== */
-
-.teaching-page .archive__item {
-  margin-bottom: 0.8em;  /* tighter spacing between entries */
-}
-
-.teaching-page .archive__item-title {
-  font-size: 1.1em;
+/* Course title (small + colored) */
+.teaching-page .teaching-title {
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #2a6f97;   /* nice academic blue */
   margin-bottom: 0.1em;
 }
 
-/* Flex layout for alignment */
+/* Program / type line */
+.teaching-page .teaching-program {
+  font-size: 0.85em;
+  color: #444;
+  margin-bottom: 0.1em;
+}
+
+/* University + year line */
 .teaching-page .teaching-meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9em;
-  line-height: 1.2;
+  font-size: 0.85em;
+  color: #666;
 }
 
-/* Left side (type + venue) */
-.teaching-page .teaching-left {
-  text-align: left;
-}
-
-/* Right side (year) */
-.teaching-page .teaching-right {
-  text-align: right;
-  white-space: nowrap;
-}
-
-/* Optional: remove big paragraph spacing */
+/* Reduce spacing globally in teaching */
 .teaching-page p {
-  margin-bottom: 0.2em;
+  margin: 0;
 }
