@@ -6,11 +6,29 @@ author_profile: true
 ---
 
 {% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
+<p style="text-decoration:underline;">
+  <a href="/talkmap.html">See a map of all the places I've given a talk!</a>
+</p>
 {% endif %}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+{% include base_path %}
+
+{% for talk in site.data.talks %}
+
+<div class="teaching-item">
+
+  <div class="teaching-title">
+    {{ talk.title }}
+  </div>
+
+  <div class="teaching-program">
+    {{ talk.type }}
+  </div>
+
+  <div class="teaching-meta">
+    {{ talk.venue }}, {{ talk.years }}
+  </div>
+
+</div>
+
 {% endfor %}
