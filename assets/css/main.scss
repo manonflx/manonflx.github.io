@@ -42,34 +42,24 @@
     "vendor/font-awesome/brands"
 ;
 
-/* ===== CV-style Teaching Section ===== */
-
-.teaching-page .teaching-item {
+.teaching-item {
   margin-bottom: 0.8em;
 }
 
-/* Course title (small + colored) */
-.teaching-page .teaching-title {
+.teaching-title {
   font-size: 0.95em;
   font-weight: 600;
-  color: #2a6f97;   /* nice academic blue */
-  margin-bottom: 0.1em;
+  color: #2a6f97;
+  margin: 0;
 }
 
-/* Program / type line */
-.teaching-page .teaching-program {
+.teaching-program {
   font-size: 0.85em;
   color: #444;
-  margin-bottom: 0.1em;
+  margin: 0;
 }
 
-/* University + year line */
-.teaching-page .teaching-meta {
+.teaching-meta {
   font-size: 0.85em;
   color: #666;
-}
-
-/* Reduce spacing globally in teaching */
-.teaching-page p {
-  margin: 0;
 }
