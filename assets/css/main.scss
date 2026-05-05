@@ -56,3 +56,38 @@
 .teaching-page .archive__item-excerpt {
   font-size: 0.95em;  /* description */
 }
+
+/* ===== Teaching CV-style layout ===== */
+
+.teaching-page .archive__item {
+  margin-bottom: 0.8em;  /* tighter spacing between entries */
+}
+
+.teaching-page .archive__item-title {
+  font-size: 1.1em;
+  margin-bottom: 0.1em;
+}
+
+/* Flex layout for alignment */
+.teaching-page .teaching-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+
+/* Left side (type + venue) */
+.teaching-page .teaching-left {
+  text-align: left;
+}
+
+/* Right side (year) */
+.teaching-page .teaching-right {
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Optional: remove big paragraph spacing */
+.teaching-page p {
+  margin-bottom: 0.2em;
+}

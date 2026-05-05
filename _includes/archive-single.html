@@ -39,9 +39,14 @@
     {% endif %}
 
     {% if post.collection == 'teaching' %}
-        <p class="teaching-meta">
-    {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
-    </p>
+        <div class="teaching-meta">
+  <span class="teaching-left">
+    {{ post.type }}, <i>{{ post.venue }}</i>
+  </span>
+  <span class="teaching-right">
+    {{ post.date | default: "1900-01-01" | date: "%Y" }}
+  </span>
+</div>
         {% elsif post.collection == 'publications' %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.date %}
